@@ -7,6 +7,15 @@
     android:gravity="center"
     android:padding="24dp"
     android:background="#FFFFFF">
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/splash_screen_logo"
+        android:contentDescription="HopDrop Logo"
+        android:layout_gravity="center"
+        />
 
     <TextView
         android:id="@+id/congratsMessage"
@@ -40,5 +49,6 @@
         android:text="Return to Login"
         android:enabled="false"
         android:layout_marginTop="16dp" />
+
 
 </LinearLayout>

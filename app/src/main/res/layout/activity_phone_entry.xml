@@ -6,7 +6,15 @@
     android:orientation="vertical"
     android:gravity="center"
     android:background="#FFFFFF">
-
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/splash_screen_logo"
+        android:contentDescription="HopDrop Logo"
+        android:layout_gravity="center"
+        />
     <EditText
         android:id="@+id/phoneInput"
         android:layout_width="match_parent"
@@ -20,4 +28,5 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Next" />
+
 </LinearLayout>

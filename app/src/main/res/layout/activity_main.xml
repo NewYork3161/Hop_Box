@@ -4,7 +4,15 @@
     android:layout_height="match_parent"
     android:background="#EDEBFF"
     android:gravity="center">
-
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/splash_screen_logo"
+        android:contentDescription="HopDrop Logo"
+        android:layout_gravity="center"
+        />
     <TextView
         android:id="@+id/welcomeText"
         android:layout_width="wrap_content"
@@ -13,4 +21,5 @@
         android:textSize="26sp"
         android:textStyle="bold"
         android:textColor="#3A3A3A" />
+
 </FrameLayout>
