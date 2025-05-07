@@ -24,13 +24,14 @@ public class SplashScreenActivity extends AppCompatActivity {
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_splash_screen);
 
+        // Handle system insets for edge-to-edge
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
 
-        // Start animation
+        // Load and start animations
         ImageView logo = findViewById(R.id.logo);
         TextView appName = findViewById(R.id.appName);
 
@@ -40,9 +41,9 @@ public class SplashScreenActivity extends AppCompatActivity {
         logo.startAnimation(hopDropAnim);
         appName.startAnimation(fadeInAnim);
 
-        // Navigate to MainActivity after delay
+        // Navigate to LoginActivity after delay
         new Handler().postDelayed(() -> {
-            startActivity(new Intent(SplashScreenActivity.this, MainActivity.class));
+            startActivity(new Intent(SplashScreenActivity.this, LoginActivity.class));
             finish();
         }, SPLASH_DURATION);
     }

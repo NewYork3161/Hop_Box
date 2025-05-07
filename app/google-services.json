@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "464967953152",
+    "project_id": "hop-drop-44a44",
+    "storage_bucket": "hop-drop-44a44.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:464967953152:android:7c7e1fd71bbf5c7aae21e5",
+        "android_client_info": {
+          "package_name": "com.example.hopdrop"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA33NuAD8kTXQlMxZqxohFhJ-YLporF8Sk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
